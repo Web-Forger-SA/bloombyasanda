@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Alex+Brush&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alex+Brush&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+import url('https://fonts.googleapis.com/css2?family=Alex+Brush&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+:root {
+  /*Text fonts */
+  --alex-brush: "Alex Brush", sans-serif;
+  --montserrat: "Montserrat", sans-serif;
+  --playfair-display: "Playfair Display", sans-serif;
+
+  /* Colors */
+
+  /* Base */
+  --color-white: #FFFFFF;
+  --color-black: #000000;
+
+  /* Neutrals */
+  --color-cream: #F2EDE8;
+  --color-espresso: #2C2520;
+  --color-bark: #1E1510;
+
+  /* Brand */
+  --color-burgundy: #4A051A;
+  --color-burgundy-dark: #300512;
+
+  /* Accents */
+  --color-blush: #CB7C77;
+  --color-gold: #C9A96E;
+}
