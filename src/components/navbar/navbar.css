@@ -23,7 +23,10 @@
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
-  gap: 0.625
+  gap: 0.625rem;
+}
+.navlink{
+  white-space: nowrap;
 }
 .navlinks li a{
   font-family: var(--montserrat);

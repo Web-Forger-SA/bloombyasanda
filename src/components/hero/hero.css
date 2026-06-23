@@ -1,33 +1,116 @@
-#hero{
+.hero-section{
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   min-height: calc(100dvh - 3.75rem);
-  width: 85.375rem; /*1366px*/
+  width: 100%; /* fiils parent */
+  padding: 0;
+  margin: 0;
+  gap: 10px;
 }
 
-#category-tag-strip{
-
-  max-width: 100%;
-  min-height: 3,125rem;
+.category-tags{
+  min-height: 3.125rem;
   display: flex;
   flex-direction: row;
+  align-self: flex-start;  /* max-width: 100%; */
   justify-content: space-around;
   /* padding: 1rem; */
-  
+  width: 100%;
 }
 
 .category-tag{
   padding: 1rem;
   border: 0.0625rem solid var(--color-gold);
-  min-height: 3,125rem;
-  width: 100vw;
+  min-height: 3.125rem;
+  flex: 1;
   gap: 0;
   font-family: var(--montserrat);
   font-size: clamp(0.75rem, 0.5rem + 0.625vw, 1rem);
   font-weight: 200;
+  white-space: nowrap;
 }
+
+.main-hero{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.5rem;
+  width: 100%;
+  max-height: 560px;
+}
+
+.hero-text-content{
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  text-align: left;
+  padding: 1rem 2rem;
+}
+
+.hero-text-content > p > small{
+  font-family: var(--montserrat);
+  letter-spacing: 2%;
+  font-size: 0.625rem;
+  font-weight: 300;
+  color: var(--color-bark);
+}
+
+.hero-title{
+  font-family: var(--playfair-display);
+  font-size: 6rem; /* 96rem */
+  /* font-size: clamp(2.5rem, 6rem, 7.5rem); */
+  color: var(--color-black);
+  letter-spacing: 2%;
+  padding: 0;
+  margin: 0;
+}
+
+.hero-title > span {
+  color: var(--color-burgundy-dark);
+}
+ 
+.hero-subheading{
+  font-family: var(--montserrat);
+  font-size: 1rem;
+  letter-spacing: 5%;
+  max-width: 65%;
+}
+
+.cta-buttons{
+  display: flex;
+  flex-direction: row;
+  max-width: 65%;
+  padding: 1rem 0;
+  gap: 0.625rem;
+} 
+
+.cta-buttons .hero-btn{
+  gap: 0.625rem;
+  padding: 0 0.625rem;
+  color: var(--color-white);
+  white-space: nowrap;
+  background-color: var(--color-black);
+  min-height: 2rem;
+  text-align: center;
+  font-family: var(--montserrat);
+  font-size: clamp(0.5rem, 0.75rem, 1.125rem);
+  font-weight: 600;
+}
+.cta-buttons .supplier-btn{
+  background-color: var(--color-burgundy);
+}
+
+
+/* Left Side */
+.hero-image-content{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.3125rem;
+  padding: 3rem 0;
+  background-color: var(--color-burgundy)
+}
+
 
 
 
