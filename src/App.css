@@ -27,3 +27,7 @@
   --color-blush: #CB7C77;
   --color-gold: #C9A96E;
 }
+
+html{
+  scroll-behavior: smooth;
+}

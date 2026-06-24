@@ -1,4 +1,5 @@
 import "./hero.css";
+import model from '../../../media/model-frame.png'
 
 const Hero = () => (
   <section className="hero-section" id="hero">
@@ -19,11 +20,17 @@ const Hero = () => (
         </div>
       </div>
       <div className="hero-image-content" id="right-hero">
-
+        <div className="woman-handbang-display">
+          <img src={model} alt="handbag-model-carrying-a-black-handbag" />
+        </div>
+        <div className="handbag-display">
+          <img />
+          <img />
+        </div>
       </div>
     </div>
     <div className="handbag-stip-name"></div>
-  </section>
+  </section >
 )
 
 export default Hero;
