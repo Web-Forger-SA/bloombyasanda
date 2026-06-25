@@ -59,7 +59,7 @@
 
 .hero-title{
   font-family: var(--playfair-display);
-  /* font-size: 6rem; /* 96rem */ */
+  /* font-size: 6rem; */
   font-size: clamp(2.5rem, 6rem, 7.5rem);
   color: var(--color-black);
   letter-spacing: 2%;

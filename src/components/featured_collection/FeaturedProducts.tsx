@@ -1,5 +1,5 @@
-import "./featuredProducts.css" ww
-import HandbagCard from "../cards/handbag"
+import "./featuredProducts.css";
+import HandbagCard from "../../../media/hero_bag-1.png";
 
 const FeaturedProducts = () => (
   <section className="featured-products section">

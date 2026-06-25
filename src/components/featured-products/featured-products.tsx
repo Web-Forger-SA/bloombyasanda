@@ -1,5 +1,5 @@
 import { HandbagCard } from "../handbag-card/handbag-card";
-import "./featured-products.css"
+import "./featured-products.css";
 // import HandbagCard from "../handbag-card"
 
 const FeaturedProducts = () => (
