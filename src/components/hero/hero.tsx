@@ -1,13 +1,16 @@
 import "./hero.css";
 import model from '../../../media/model-frame.png'
+import handbag_1 from "../../../media/hero_bag-1.png"
+import handbag_2 from "../../../media/hero_bag-2.png"
+
 
 const Hero = () => (
   <section className="hero-section" id="hero">
     <div className="category-tags" id="category-tag-strip">
       <div className="category-tag" id="tag-1">Premium Leather Goods</div>
-      <div className="category-tag" id="tag-1">Currated Collections</div>
-      <div className="category-tag" id="tag-1">Wholesale available</div>
-      <div className="category-tag" id="tag-1">New Weekly Arrivals</div>
+      <div className="category-tag" id="tag-2">Currated Collections</div>
+      <div className="category-tag" id="tag-3">Wholesale available</div>
+      <div className="category-tag" id="tag-4">New Weekly Arrivals</div>
     </div>
     <div className="main-hero">
       <div className="hero-text-content" id="left-hero">
@@ -19,13 +22,15 @@ const Hero = () => (
           <button className="hero-btn supplier-btn">Become a Supplier</button>
         </div>
       </div>
+
+      {/* Right side of the hero section */}
       <div className="hero-image-content" id="right-hero">
-        <div className="woman-handbang-display">
+        <div className="handbag-model">
           <img src={model} alt="handbag-model-carrying-a-black-handbag" />
         </div>
         <div className="handbag-display">
-          <img />
-          <img />
+          <img id="hero-bag-1" className="hero-handbag" src={handbag_1} alt="handbag on display" />
+          <img id="hero-bag-2" className="hero-handbag" src={handbag_2} alt="second handbag on display" />
         </div>
       </div>
     </div>

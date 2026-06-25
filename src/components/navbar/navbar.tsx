@@ -2,7 +2,7 @@ import './navbar.css'
 
 
 
-const Navbar = () =>(
+const Navbar = () => (
   <>
     <nav className="grid navbar">
       <a className="logo" href="/">Bloom</a>
@@ -14,6 +14,6 @@ const Navbar = () =>(
         <li className="navlink"><a href="/contact">Contact</a></li>
       </ul>
       <button className="btn nav-btn">Join Whatsapp </button>
-    </nav> </>) 
+    </nav> </>)
 
 export default Navbar;
