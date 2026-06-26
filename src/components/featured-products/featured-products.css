@@ -1,13 +1,14 @@
 .featured-products{
   padding: 4rem 5.625rem; /* 64px and 90px */
-  gap: 1.25rem; /*20px*/
+  gap: 3rem; /*20px*/
   background-color: var(--color-burgundy);
   color: var(--color-white);
+  display: flex;
+  flex-direction: column;
 }
 
 .featured-products__header{
   /* border: 3px solid var(--color-white); */
-  padding: 0.625rem; /*10px*/
   gap: 3rem; /*48px*/
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -19,29 +20,29 @@
   flex-direction: column;
   align-items: flex-start;
   gap: 0.625rem; /*10px*/
-
 }
 
 .featured-products__tag{
   font-family: var(--montserrat);
   font-size: 0.625rem;
-  letter-spacing: 5%;
+  letter-spacing: 0.05em;
 }
-
-
 
 .featured-products__title{
   font-family: var(--playfair-display);
   font-size: 3rem;
-  letter-spacing: 5%;
+  letter-spacing: 0.05em;
   white-space: nowrap;
 
 }
 
-.featured-products__button__wrapper{
+.featured-products__button_wrapper{
+  padding: 0;
+  margin: 0;
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
+  align-items: flex-end;
 }
 
 .featured-products__view-all{
@@ -51,13 +52,45 @@
   text-align: center;
   font-family: var(--montserrat);
   font-size: 1.25rem; /* 20px */
-  letter-spacing: 5%;
+  letter-spacing: 0.05em;
   border: 1px solid var(--color-white);
 }
 
+/* Products display */
 
 
+.featured-products__display{
+  gap: 1.25rem; /* 20px */
+  /* border: 5px solid black; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
 
+.featured-products__tabs{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  gap: 1.5rem;
+  border-bottom: 0.0625rem solid var(--color-white);
+}
+.featured-products__tabs > .active{
+  border-bottom: 2px solid var(--color-gold);
+  margin-bottom: -1px; /* overlap parent border */
+}
+
+.featured-products__tab{
+  font-family: var(--montserrat);
+  text-transform: uppercase;
+  font-size: 1rem;
+  letter-spacing: 0.05em;
+}
+
+.featured-products__grid{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 10px;
+}
 
 
 

@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import "./handbag-card.css";
 
 //interface for type safety
 interface HandbagCardProps {
@@ -11,7 +12,7 @@ interface HandbagCardProps {
 }
 
 
-export const Handbag: React.FC<HandbagCardProps> = ({
+const Handbag: React.FC<HandbagCardProps> = ({
   imageSrc = "../../../media/hero_bag-1.png",
   imageAlt = "placeholder handbag", name = "Shoulder bag",
   price = "R 450.00",
@@ -27,6 +28,7 @@ export const Handbag: React.FC<HandbagCardProps> = ({
       <img
         src={imageSrc}
         alt={imageAlt}
+        style={{ width: '100%', height: 'auto', objectFit: 'cover' }}
         className="featured-products__handbag-image"
       />
 
@@ -39,7 +41,7 @@ export const Handbag: React.FC<HandbagCardProps> = ({
         type="button"
         className="order-btn"
         onClick={onAddToOrder}
-        style={{ cursor: 'pointer', border: 'none', background: 'none' }} // Resets button styling if needed
+        style={{ cursor: 'pointer'}} // Resets button styling if needed
       >
         Add To Order
       </button>
@@ -48,4 +50,4 @@ export const Handbag: React.FC<HandbagCardProps> = ({
 };
 
 
-
+export default Handbag;

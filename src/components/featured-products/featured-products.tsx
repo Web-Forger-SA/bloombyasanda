@@ -1,6 +1,5 @@
-import { HandbagCard } from "../handbag-card/handbag-card";
 import "./featured-products.css";
-// import HandbagCard from "../handbag-card"
+import Handbag from "../handbag-card/handbag"
 
 const FeaturedProducts = () => (
   <section className="featured-products section" id="featured-collection">
@@ -17,33 +16,47 @@ const FeaturedProducts = () => (
     <div className="featured-products__display">
       <nav className="featured-products__tabs" id="featured-products-tabs">
         <button aria-controls="all-bags-panel" className="featured-products_tab" id="all-bag-tab">ALL</button>
-        <button aria-controls="tote-bag-panel" className="featured-products_tab" id="tote-bag-tab">TOTE</button>
+        <button aria-controls="tote-bag-panel" className="featured-products_tab active" id="tote-bag-tab">TOTE</button>
         <button aria-controls="crossbody-bags-panel" className="featured-products_tab" id="crossbody-bag-tab">CROSSBODY</button>
         <button aria-controls="mini-bags-panel" className="featured-products_tab" id="mini-bag-tab">MINI</button>
         <button aria-controls="sales-panel" className="featured-products_tab" id="sales-tab">SALE</button>
       </nav>
-      <div className="featured-products__grid" id="featured-products-grid ">
-        {/* <div className="featured-products__handbag-card"> */}
-        {/*   <img src="" alt="" className="featured-products__handbag-image" /> */}
-        {/*   <div className="featured-products__handbag-details"> */}
-        {/*     <h3 className="handbag-name">Onyx Croc-Embossed Chain Shoulder Bag</h3> */}
-        {/*     <p className="handbag-price">R 450.00</p> */}
-        {/*     <p className="handbag-description">Elevate your everyday style with this structured, croc-embossed shoulder bag. Featuring a sleek black finish, elegant gold-tone chain straps, and a secure top closure, it offers the perfect balance of modern sophistication and practical space for your essentials.</p> */}
-        {/*   </div> */}
-        {/*   <div className="order-btn">Add To Order</div> */}
-        {/* </div> */}
+      <div className="featured-products__grid" id="featured-products-grid">
+        <Handbag
+            imageSrc="https://placehold.net/default.svg"
+            imageAlt="Crimson Clutch"
+            name="Crimson Leather Clutch"
+            price={650.00}
+            description="A vibrant red evening clutch perfect for nights out."
+            // onAddToOrder={() => handleAddToOrder("Crimson Clutch")}
+          />
+         <Handbag
+            imageSrc="https://placehold.net/default.svg"
+            imageAlt = "Onyx Croc-Embossed Chain Shoulder Bag"
+            name = "Onyx Croc-Embossed Chain Shoulder Bag"
+            price = "R 450.00"
+            description="A vibrant red evening clutch perfect for nights out."
+            // onAddToOrder={() => handleAddToOrder("Crimson Clutch")}
+          />
+         <Handbag
+           imageSrc="https://placehold.net/default.svg"
+            imageAlt="Crimson Clutch"
+            name="Crimson Leather Clutch"
+            price={650.00}
+            description="A vibrant red evening clutch perfect for nights out."
+            // onAddToOrder={() => handleAddToOrder("Crimson Clutch")}
+          />
+         <Handbag
+            imageSrc="https://placehold.net/default.svg"
+            imageAlt="Crimson Clutch"
+            name="Crimson Leather Clutch"
+            price={650.00}
+            description="A vibrant red evening clutch perfect for nights out."
+            // onAddToOrder={() => handleAddToOrder("Crimson Clutch")}
+          />
       </div>
     </div>
-    {/* // <HandbagCard /> */}
-    <HandbagCard
-      imageSrc="../../../media/hero_bag-2.png"
-      imageAlt="Crimson Clutch"
-      name="Crimson Leather Clutch"
-      price={650.00}
-      description="A vibrant red evening clutch perfect for nights out."
-    // onAddToOrder={() => handleAddToOrder("Crimson Clutch")}
-    />
-  </section>
+     </section>
 );
 
 export default FeaturedProducts;
