@@ -34,7 +34,7 @@ const Handbag: React.FC<HandbagCardProps> = ({
       <img
         src={imageSrc}
         alt={imageAlt}
-        style={{ width: '100%', height: 'auto', objectFit: 'cover', width: '280px', height:'300px'}} 
+        style={{ width: '100%', height: 'auto', objectFit: 'cover'}} 
         className="featured-products__handbag-image"
       />
 

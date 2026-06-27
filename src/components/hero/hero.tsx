@@ -18,7 +18,7 @@ const Hero = () => (
         <h1 className="hero-title" id="hero-title-text">Styled to <span><i>Inspire</i></span></h1>
         <p className="title-subheading" id="title-subheading">Stylish handbags for modern shoppers, boutiques, and resellers.</p>
         <div className="cta-buttons">
-          <button className="hero-btn">Browse Handbags</button>
+          <button className="hero-btn">Shop Now</button>
           <button className="hero-btn supplier-btn">Become a Supplier</button>
         </div>
       </div>

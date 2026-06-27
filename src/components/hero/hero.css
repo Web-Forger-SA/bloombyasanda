@@ -85,6 +85,8 @@
   max-width: 65%;
   padding: 1rem 0;
   gap: 0.625rem;
+  font-family: var(--montserrat);
+  font-size: 1rem;
 } 
 
 .cta-buttons .hero-btn{
@@ -93,13 +95,18 @@
   color: var(--color-white);
   white-space: nowrap;
   background-color: var(--color-black);
-  min-height: 2rem;
+  height: 3rem;
+  width: 11.813rem;
   text-align: center;
   font-family: var(--montserrat);
-  font-size: clamp(0.75rem, 0.5rem + 0.5vw, 1.125rem);  font-weight: 600;
+  /* font-size: clamp(0.75rem, 0.5rem + 0.5vw, 1.125rem); */
+  font-weight: 600;
 }
 .cta-buttons .supplier-btn{
-  background-color: var(--color-burgundy);
+  background-color: var(--color-white);
+  border: 1px solid var(--color-burgundy);
+  color: var(--color-burgundy);
+  font-weight: 500;
 }
 
 
