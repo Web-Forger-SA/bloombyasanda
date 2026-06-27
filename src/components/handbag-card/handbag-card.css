@@ -1,7 +1,7 @@
 .featured-products__handbag-card{
   /* border: 1px solid var(--color-white); */
   display: grid;
-  grid-template-rows: 1fr 0.35fr 0.25fr;
+  grid-template-rows: 1fr 0.15fr 0.1fr;
   align-items: stretch;
 }
 
@@ -12,23 +12,43 @@
   /* justify-content: flex-start; */
   align-items: flex-start;
   padding: 0.625rem;
-  background-color: #1E1510;
+  background-color: var(--color-burgundy-dark);
   flex-wrap: wrap;
   text-align: left;
 }
 
 .featured-products__handbag-details > h3{
   display: -webkit-box;
-  -webkit-line-clamp: 2; /* Sets the maximum number of lines */
+  -webkit-line-clamp: 1; /* Sets the maximum number of lines */
   -webkit-box-orient: vertical;  
   overflow: hidden; /* Hides the rest of the text */
-
-  min-height: 2lh; 
+  min-height: 1lh; 
+  font-family: var(--playfair-display);
+  font-size: 0.875rem;
 }
 
-.featured-products__handbag-card > button{
-  background-color: var(--color-black, #000000);
-  color: var(--color-white);
+.featured-products__handbag-details > .handbag-price{
+  font-family: var(--montserrat);
+  color: var(--color-pink);
+  font-size: 0.75rem;
+}
+
+.featured-products__handbag-details .handbag-description{
+  display: -webkit-box;
+  -webkit-line-clamp: 1; /* Sets the maximum number of lines */
+  -webkit-box-orient: vertical;  
+  overflow: hidden; /* Hides the rest of the text */
+  min-height: 1lh; 
+}
+
+.featured-products__handbag-details > .order-btn{
+  background-color: var(--color-pink, #DA7896);
+  color: var(--color-burgundy-dark);
+  width: 100%;
+  font-family: var(--montserrat);
+  font-size: 1rem;
+  padding: 0.35rem;
+  margin-top: 0.35rem
 
 }
 
