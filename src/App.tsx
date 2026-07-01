@@ -4,6 +4,7 @@ import Hero from './sections/hero/hero'
 import './App.css'
 import Process from './sections/process/process'
 import FeaturedProducts from './sections/featured-products/featured-products'
+import About from './sections/about/about'
 
 function App() {
 
@@ -13,6 +14,7 @@ function App() {
       <Hero />
       <Process />
       <FeaturedProducts />
+      <About />
     </>
   )
 }
