@@ -7,7 +7,7 @@
   color: var(--color-white);
   letter-spacing: 0.02em;
   text-align: left;
-  gap: 1rem;
+  gap: 2rem;
 }
 
 .ordering-process__header{
