@@ -38,9 +38,11 @@
   background-color: var(--color-black);
   color: var(--color-white);
   font-family: var(--montserrat);
+  font-size: clamp(0.3125rem, 0.625rem, 1rem);
   font-weight: 500;
   padding: 0.625rem;
   cursor: pointer;
+  /* max-width: 10rem; */
 }
 
 .about_section-right{

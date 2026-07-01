@@ -27,7 +27,7 @@
 .ordering-process__title{
   font-size: 3rem;
   font-family: var(--playfair-display);
-  min-width: 350px;
+  max-width: 350px;
 }
 
 .ordering-process__title .title-style{
@@ -35,12 +35,13 @@
 }
 
 .ordering-process__steps{
-  padding: 2rem 1.5rem;
+  /* padding: 2rem 1.5rem; */
+  padding: 1rem;
   gap: 1rem;
   display: flex;
   flex-direction: row;
   justify-content: center;
-  flex: 1
+  flex: 1;
 }
 
 .ordering-process__step{
@@ -50,6 +51,7 @@
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+  background-color: #ffffff08;
 }
 
 .ordering-process__step-number{
@@ -65,7 +67,7 @@
 
 .ordering-process__step-description{
   font-family: var(--jost);
-  font-size: 1rem;
+  font-size: rem;
   color: #B09AA0;
   line-height: 1.6;
 }
