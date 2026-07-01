@@ -1,5 +1,5 @@
 import "./featured-products.css";
-import Handbag from "../handbag-card/handbag"
+import Handbag from "../../components/handbag-card/handbag"
 import handbag_1 from "../../assets/products/mini-square-box-bag.png"
 import handbag_2 from '../../assets/products/bag-desctiption.png'
 import handbag_3 from '../../assets/products/bag-desctiption (1).png'
@@ -28,40 +28,40 @@ const FeaturedProducts = () => (
       </nav>
       <div className="featured-products__grid" id="featured-products-grid">
         <Handbag
-            imageSrc={handbag_1}
-            imageAlt="Mini square Box Bag"
-            name="Mini square Box Bag"
-            price={300}
-            // descriptions={["Handbag", "Crossbody bag" , "Shoulder bag"]}
-            // onAddToOrder={() => handleAddToOrder("Crimson Clutch")}
-          />
-         <Handbag
-            imageSrc={handbag_2}
-            imageAlt = "Onyx Croc-Embossed Chain Shoulder Bag"
-            name = "Onyx Croc-Embossed Chain Shoulder Bag"
-            price = "R 450.00"
-            // description="A vibrant red evening clutch perfect for nights out."
-            // onAddToOrder={() => handleAddToOrder("Crimson Clutch")}
-          />
-         <Handbag
-           imageSrc={handbag_3}
-            imageAlt="Crimson Clutch"
-            name="Crimson Leather Clutch"
-            price={650.00}
-            // description="A vibrant red evening clutch perfect for nights out."
-            // onAddToOrder={() => handleAddToOrder("Crimson Clutch")}
-          />
-         <Handbag
-            imageSrc={handbag_4}
-            imageAlt="Crimson Clutch"
-            name="Crimson Leather Clutch"
-            price={650.00}
-            // description="A vibrant red evening clutch perfect for nights out."
-            // onAddToOrder={() => handleAddToOrder("Crimson Clutch")}
-          />
+          imageSrc={handbag_1}
+          imageAlt="Mini square Box Bag"
+          name="Mini square Box Bag"
+          price={300}
+        // descriptions={["Handbag", "Crossbody bag" , "Shoulder bag"]}
+        // onAddToOrder={() => handleAddToOrder("Crimson Clutch")}
+        />
+        <Handbag
+          imageSrc={handbag_2}
+          imageAlt="Onyx Croc-Embossed Chain Shoulder Bag"
+          name="Onyx Croc-Embossed Chain Shoulder Bag"
+          price="R 450.00"
+        // description="A vibrant red evening clutch perfect for nights out."
+        // onAddToOrder={() => handleAddToOrder("Crimson Clutch")}
+        />
+        <Handbag
+          imageSrc={handbag_3}
+          imageAlt="Crimson Clutch"
+          name="Crimson Leather Clutch"
+          price={650.00}
+        // description="A vibrant red evening clutch perfect for nights out."
+        // onAddToOrder={() => handleAddToOrder("Crimson Clutch")}
+        />
+        <Handbag
+          imageSrc={handbag_4}
+          imageAlt="Crimson Clutch"
+          name="Crimson Leather Clutch"
+          price={650.00}
+        // description="A vibrant red evening clutch perfect for nights out."
+        // onAddToOrder={() => handleAddToOrder("Crimson Clutch")}
+        />
       </div>
     </div>
-     </section>
+  </section>
 );
 
 export default FeaturedProducts;

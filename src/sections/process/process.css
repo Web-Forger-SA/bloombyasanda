@@ -1,0 +1,72 @@
+.ordering-process__section{
+  padding: 4rem;
+  background-color: var(--color-burgundy-dark);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  color: var(--color-white);
+  letter-spacing: 0.02em;
+  text-align: left;
+  gap: 2rem;
+}
+
+.ordering-process__header{
+  display: flex;
+  flex-direction: column;
+  gap: 0.625rem;
+  padding: 0.625rem;
+  min-height: 19.5rem
+}
+
+.small-text{
+  font-size: 0.625rem;
+  text-transform: uppercase;
+  font-family: var(--montserrat);
+}
+
+.ordering-process__title{
+  font-size: 3rem;
+  font-family: var(--playfair-display);
+  min-width: 350px;
+}
+
+.ordering-process__title .title-style{
+  color: var(--color-pink);
+}
+
+.ordering-process__steps{
+  padding: 2rem 1.5rem;
+  gap: 1rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex: 1
+}
+
+.ordering-process__step{
+  border: 1px solid #4B2323;
+  gap: 0.625rem;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.ordering-process__step-number{
+  font-family: var(--cormorant-garamond);
+  font-size: 3.5rem;
+  color: var(--color-pink);
+}
+
+.ordering-process__step-title{
+  font-family: var(--jost);
+  font-size: 1.125rem;
+}
+
+.ordering-process__step-description{
+  font-family: var(--jost);
+  font-size: 1rem;
+  color: #B09AA0;
+  line-height: 1.6;
+}
+

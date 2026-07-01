@@ -7,7 +7,10 @@ import handbag_2 from "../../../media/hero_bag-2.png"
 const Hero = () => (
   <section className="hero-section section" id="hero">
     <div className="category-tags" id="category-tag-strip">
-      <div className="category-tag" id="tag-1">Premium Leather Goods</div>
+      <div className="category-tag" id="tag-1">
+        {/* <img src="" alt="" /> */}
+        Premium Leather Goods
+      </div>
       <div className="category-tag" id="tag-2">Currated Collections</div>
       <div className="category-tag" id="tag-3">Wholesale available</div>
       <div className="category-tag" id="tag-4">New Weekly Arrivals</div>

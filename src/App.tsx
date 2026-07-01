@@ -1,8 +1,10 @@
 // import { useState } from 'react'
-import Navbar from './components/navbar/navbar'
-import Hero from './components/hero/hero'
+import Navbar from './sections/navbar/navbar'
+import Hero from './sections/hero/hero'
 import './App.css'
-import FeaturedProducts from './components/featured-products/featured-products'
+import Process from './sections/process/process'
+import FeaturedProducts from './sections/featured-products/featured-products'
+import About from './sections/about/about'
 
 function App() {
 
@@ -10,7 +12,9 @@ function App() {
     <>
       <Navbar />
       <Hero />
+      <Process />
       <FeaturedProducts />
+      <About />
     </>
   )
 }
