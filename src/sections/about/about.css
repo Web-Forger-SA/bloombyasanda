@@ -1,0 +1,66 @@
+.about_section{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  text-align: left;
+}
+
+.about_section-left{
+  padding: 6rem 4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.625rem;
+}
+
+.about_section-left-header{
+  gap: 0.5rem;
+}
+
+.about_section-left-article{
+  padding: 0.625rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: flex-start;
+}
+
+.about_section-left-title{
+  color: var(--color-black);
+  font-family: var(--playfair-display);
+  font-size: clamp(2rem, calc(2rem + 2.5vw), 5rem);
+}
+
+.about_section-text{
+  font-family: var(--montserrat);
+  font-size: clamp(0.5rem, 1vw, 1.25rem);
+}
+
+.about_section-left-button{
+  background-color: var(--color-black);
+  color: var(--color-white);
+  font-family: var(--montserrat);
+  font-weight: 500;
+  padding: 0.625rem;
+  cursor: pointer;
+}
+
+.about_section-right{
+  height: 100%;
+  /* Defines the image source path */
+  background-image: url('../../assets/about/about-image.png'); 
+  
+  /* Centers the image horizontally and vertically */
+  background-position: center; 
+  
+  /* Prevents the image from repeating like a tile grid */
+  background-repeat: no-repeat; 
+  
+  /* Scales the image to fill the container without losing aspect ratio */
+  /* 'auto 100%' forces the image height to fit perfectly top-to-bottom */
+    background-size: auto 100%; 
+    
+    /* Keeps the image tucked cleanly against the dividing center line */
+    background-position: center right; 
+  
+  /* Provides a fallback color if the image fails to load */
+  /* background-color: #C8B7A5;  */
+}
