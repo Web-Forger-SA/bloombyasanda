@@ -1,0 +1,97 @@
+.resellers_section{
+  background-color: var(--color-burgundy-dark);
+  color: var(--color-white);
+  font-family: var(--montserrat);
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.resellers_section-left{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 0.5rem;
+  padding: 6rem 4rem 6rem 4rem;
+  text-align: left;
+}
+
+.resellers_section-left-header{
+  padding: 0;
+  margin: 0;
+}
+
+.resellers_section-left-body{
+  margin-bottom: 1rem;
+}
+
+.resellers_section-text-title{
+  font-family: var(--playfair-display);
+  font-size: 3rem;
+  max-width: 500px;
+}
+
+.resellers_section-text-title i{
+  color: var(--color-pink);
+}
+
+.resellers_section-body-content{
+  padding: 1.5rem 0;
+  max-width: 500px;
+}
+
+
+.resellers-descriptions{
+  padding: 1.25rem;
+  display: list-item;
+  list-style-type: disc; /* Use 'circle', 'square', or 'decimal' for numbers */
+  max-width: 500px;
+}
+
+.resellers-description{
+  display: list-item;
+  list-style-type: disc; /* Use 'circle', 'square', or 'decimal' for numbers */
+  gap: 0.125rem;
+}
+
+.note-box{
+  border: 1px solid var(--color-gold);
+  padding: 0.5rem 1rem;
+  font-weight: 600;
+}
+
+.note-box span{
+  color: var(--color-pink);
+  font-weight: 500;
+}
+
+.join-btn{
+  color: var(--color-burgundy-dark);
+  background-color: var(--color-pink);
+  max-width: 250px;
+  min-height: 2.25rem;
+  font-size: 0.75rem;
+}
+
+
+.resellers_section-right{
+  height: 100%;
+  /* Defines the image source path */
+  background-image: url('../../assets/resellers/resellers-bag.png'); 
+  
+  /* Centers the image horizontally and vertically */
+  background-position: center; 
+  
+  /* Prevents the image from repeating like a tile grid */
+  background-repeat: no-repeat; 
+  
+  /* Scales the image to fill the container without losing aspect ratio */
+  /* 'auto 100%' forces the image height to fit perfectly top-to-bottom */
+    background-size: 100% 100%; 
+  
+  /* Provides a fallback color if the image fails to load */
+  /* background-color: #C8B7A5;  */
+
+    object-fit: contain;
+
+}
