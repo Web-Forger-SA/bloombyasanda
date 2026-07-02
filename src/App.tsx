@@ -5,6 +5,7 @@ import './App.css'
 import Process from './sections/process/process'
 import FeaturedProducts from './sections/featured-products/featured-products'
 import About from './sections/about/about'
+import Resellers from './sections/resellers/reselleres'
 
 function App() {
 
@@ -15,6 +16,7 @@ function App() {
       <Process />
       <FeaturedProducts />
       <About />
+      <Resellers />
     </>
   )
 }
