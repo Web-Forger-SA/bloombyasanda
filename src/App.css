@@ -35,6 +35,7 @@
 
 html{
   scroll-behavior: smooth;
+  font-family: var(--montserrat);
 }
 .small-text{
   font-size: 0.625rem;

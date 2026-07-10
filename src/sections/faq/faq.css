@@ -1,0 +1,80 @@
+.faq_section{
+  background-color: var(--color-burgundy-dark);
+  color: var(--color-white);
+  padding: clamp(1.5rem, -0.2093rem + 7.2928vw, 5.625rem) clamp(1rem, -0.2431rem + 5.3039vw, 4rem);
+  display: flex;
+  flex-direction: column;
+
+}
+
+.faq_section-header{
+  padding: clamp(0.625rem, 0.625rem + 0vw, 0.625rem);
+  /* border: 1px solid #fff; */
+}
+.faq_section-header h6{
+  font-size: clamp(0.25rem, 0.0428rem + 0.884vw, 0.75rem);
+}
+.faq_section-header h2{
+  font-size: clamp(2rem, 1.1713rem + 3.5359vw, 4rem);
+  /* font-size: clamp(1rem, 0.1713rem + 3.5359vw, 3rem); */
+  font-family: var(--playfair-display);
+}
+
+
+.faq_section-body {
+  display: flex;
+  flex-direction: column;
+  padding: clamp(1rem, 1rem + 0vw, 1rem);
+  gap: clamp(0.75rem, 0.4392rem + 1.326vw, 1.5rem);
+  /* border: 1px solid #fff; */
+}
+.accordion {
+  /* border: 1px solid var(--color-pink); */
+  
+}
+
+.accordion .accordion-btn{
+  display: flex;
+  flex-direction: row;
+  gap: clamp(0.625rem, 0.2624rem + 1.547vw, 1.5rem);
+  padding: clamp(0.5rem, 0.2928rem + 0.884vw, 1rem) clamp(1rem, 0.7928rem + 0.884vw, 1.5rem);
+  /* justify-content: space-between; */
+  /* min-height: clamp(2.1875rem, 1.3847rem + 3.4254vw, 4.125rem); */
+  align-items: flex-start;
+  background-color: var(--color-burgundy);
+  width: 100%;
+  min-height: clamp(2.1875rem, 1.0221rem + 4.9724vw, 5rem);
+  cursor: pointer;
+}
+.accordion .accordion-logo{
+  max-width: clamp(1.1875rem, 0.799rem + 1.6575vw, 2.125rem);
+}
+.accordion span{
+  font-size: clamp(1.125rem, 0.9696rem + 0.663vw, 1.5rem);
+ }
+.accordion .dropdown-logo{
+  max-width: clamp(0.9375rem, 0.7044rem + 0.9945vw, 1.5rem);
+  margin-left: auto;
+}
+
+.accordion p{
+  font-size: clamp(1.125rem, 0.9696rem + 0.663vw, 1.5rem);
+  padding-inline:  clamp(0.625rem, -0.3591rem + 4.1989vw, 3rem);
+  margin: 0;
+}
+
+.not-active{
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+  pointer-events: none;
+  margin: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.active{
+  opacity: 1;
+  max-height: auto;
+  padding-inline: clamp(0.75rem, 0.6464rem + 0.442vw, 1rem) clamp(0.625rem, -0.3591rem + 4.1989vw, 3rem);
+}
