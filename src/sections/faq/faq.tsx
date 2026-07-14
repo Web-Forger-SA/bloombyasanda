@@ -43,9 +43,11 @@ const Faq = () => {
 
   const handleClick = (index:number) => {
     if(index == openIndex){
-      index = null;
+      setOpenIndex(null);
+    }else{
+      setOpenIndex(index);
+
     }
-    setOpenIndex(index);
   }
 
 
