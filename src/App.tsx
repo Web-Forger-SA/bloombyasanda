@@ -6,6 +6,7 @@ import Process from './sections/process/process'
 import FeaturedProducts from './sections/featured-products/featured-products'
 import About from './sections/about/about'
 import Resellers from './sections/resellers/reselleres'
+import Accordion from './sections/faq/faq'
 import NewsLetter from './sections/news-letter/news-letter'
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
       <FeaturedProducts />
       <About />
       <Resellers />
+      <Accordion />
       <NewsLetter />
     </>
   )

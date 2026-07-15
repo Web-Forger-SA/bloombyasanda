@@ -35,6 +35,7 @@
 
 html{
   scroll-behavior: smooth;
+  font-family: var(--montserrat);
 }
 .small-text{
   font-size: clamp(0.25rem, 0.0428rem + 0.884vw, 0.75rem);
