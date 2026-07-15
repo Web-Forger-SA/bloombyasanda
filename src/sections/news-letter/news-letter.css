@@ -1,0 +1,33 @@
+.news_letter{
+  background-color: var(--color-burgundy);
+  color: var(--color-white); 
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  padding: clamp(0.25rem, -0.4751rem + 3.0939vw, 2rem) clamp(1rem, -0.2431rem + 5.3039vw, 4rem);
+  gap: clamp(0.25rem, -0.0608rem + 1.326vw, 1rem);
+  font-family: var(--montserrat);
+}
+
+.news_letter-title{
+  font-size: clamp(1.5rem, 0.8785rem + 2.6519vw, 3rem);
+  font-family: var(--playfair-display);
+}
+
+.news_letter-description{
+  font-size: clamp(0.3125rem, 0.0276rem + 1.2155vw, 1rem);
+}
+
+.news_letter-btn{
+  display: border-box;
+  cursor: pointer;
+  background-color: var(--color-burgundy-dark);
+  padding: clamp(0.25rem, 0.1464rem + 0.442vw, 0.5rem) clamp(0.375rem, 0.2196rem + 0.663vw, 0.75rem);
+  font-size: clamp(0.375rem, 0.2196rem + 0.663vw, 0.75rem);
+  
+}
+
+.news_letter-btn:hover{
+  border: 1px double var(--color-pink);
+}
